@@ -1,6 +1,6 @@
 # Nuthatch Data Service
 
-Paid access to reproducible, self-hosted [Nuthatch](https://github.com/nightswatchhq/nuthatch)
+Paid access to reproducible, self-hosted [Nuthatch](https://github.com/nuthatch-org/nuthatch)
 indexed datasets on Graph Horizon.
 
 The Arbitrum One proxy deployment is
@@ -24,7 +24,7 @@ consumer -- TAP-Receipt --> nuthatch-gateway --> private nuthatch :8288
 ```
 
 The Solidity service is a UUPS Horizon data service. The Rust gateway is built on
-[`horizon-core`](https://github.com/nightswatchhq/horizon-core), which validates TAP
+[`horizon-core`](https://github.com/nuthatch-org/horizon-core), which validates TAP
 receipts, rejects replayed nonces, persists receipts, aggregates RAVs, and collects them.
 
 ## Public API
@@ -66,7 +66,7 @@ The contract is deployed on Arbitrum One, but a deployment is not a live
 service. There is currently no registered provider and no settled paid query.
 The first intended offering is the computed NID
 `36d3c71446a56cdb5b90536d3f5f77351b1d92efcca94bc2fd41b1c368e69410` of
-[`nightswatchhq/horizon-nest`](https://github.com/nightswatchhq/horizon-nest),
+[`nuthatch-org/horizon-nest`](https://github.com/nuthatch-org/horizon-nest),
 served in `NAMED` mode.
 
 The on-chain lifecycle is:
