@@ -10,7 +10,7 @@ name = "nuthatch-gateway"
 path = "src/main.rs"
 
 [dependencies]
-horizon-core = { git = "https://github.com/nightswatchhq/horizon-core", branch = "main" }
+horizon-core = { git = "https://github.com/nuthatch-org/horizon-core", branch = "main" }
 axum = { version = "0.8" }
 tokio = { version = "1", features = ["full"] }
 anyhow = "1"
